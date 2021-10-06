@@ -1,0 +1,78 @@
+.work {
+    &__heading {
+        h1 {
+            display: block;
+            margin-top: $margin-base;
+            margin-bottom: $margin-base;
+            font-size: $font-size-bigger;
+            color: $primary-color;
+        }
+
+        h4 {
+            font-size: $font-size-big;
+            margin-bottom: $margin-base;
+        }
+    }
+
+    &__banner {
+        margin-bottom: $margin-bigger;
+    }
+
+    &__challenge,
+    &__process,
+    &__solution {
+
+        &__title {
+            display: block;
+            font-weight: 600;
+            margin-bottom: $margin-base;
+            font-size: $font-size-big;
+        }
+
+        &__text {
+            margin-bottom: $margin-big;
+        }
+    }
+
+    &__img {
+        img {
+            margin-bottom: $margin-bigger;
+        }
+    }
+
+    &__quote {
+
+        p {
+            font-size: $font-size-big;
+            color: $primary-color;
+            font-weight: 600;
+            margin-top: $margin-big;
+        }
+
+        span {
+            display: block;
+            font-size: $font-size-small;
+            margin-bottom: $margin-big;
+        }
+    }
+}
+
+@media (min-width: 48rem){
+    .work {
+        &__heading {
+            display: flex;
+            align-items: baseline;
+
+            h1 {
+                font-size: $font-size-huge;
+                width: 30%;
+                margin-right: $margin-base;
+            }
+    
+            h4 {
+                font-size: $font-size-bigger;
+            }
+        }
+    }
+
+}

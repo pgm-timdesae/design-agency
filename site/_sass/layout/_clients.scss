@@ -1,0 +1,38 @@
+.clients {
+    margin-top: $margin-big;
+    margin-bottom: $margin-big;
+
+    h2 {
+        color: $primary-color;
+    }
+
+    .clients__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .clients__logo {
+            margin-top: $margin-base;
+            width: 50%;
+
+            img[src$='svg']{
+                filter: brightness(0) invert(0.5);
+                
+                &[src$='svg']:hover{
+                    filter: brightness(0) invert(0);
+                }
+            }
+        }
+    }
+
+    @media (min-width: 48rem){
+        .clients__list {
+            display: flex;
+    
+            .clients__logo {
+                width: 15%;
+            }
+        }
+    }
+}
+

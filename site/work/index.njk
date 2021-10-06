@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: Work
+tags: false
+eleventyNavigation:
+  key: Work
+  order: 3
+---
+
+<section class="work h-layout">
+    <h1>Our work</h1>
+    
+    <ul class="cards">
+        {% for work in collections.works %}
+            <li>
+                <a class="card" href="/digital-agency-design-studio{{ work.url }}">
+                    <div>
+                        <img src="../static/images/thumbnails/{{ work.data.thumb }}" alt="thumbnail">
+                    </div>
+                    <div class="card__text">
+                        <h3>{{ work.data.client }}</h3>
+                        <p>{{ work.data.text }}</p>      
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</section>

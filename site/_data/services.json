@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Websites",
+        "subtitle": "Looking for a user-friendly, effective & creative website?",
+        "text": "Design Studio designs and develops innovative websites with attention to design and focus on usability. Your future website is not only appealing, but steers current and potential customers towards your goal.",
+        "image": "website.webp"
+    },
+    {
+        "title": "Webshops",
+        "subtitle": "We design & develop your customized ecommerce platform.",
+        "text": "A safe, user-friendly and reliable webshop? Design Studio is one of the most efficient e-commerce experts in the Benelux. We build your very own customized webshop in the environment of your choice: Shopify or our own platform.",
+        "image": "webshop.webp"
+    },
+    {
+        "title": "Web applications",
+        "subtitle": "We build refreshing & up to date web applications.",
+        "text": "Automate processes and go for efficient time management with a customized web application. Or offer your customers an even better and faster service with a mobile or web-based app. Technically strong, always reliable and aligned with your systems.",
+        "image": "web_app.webp"
+    },
+    {
+        "title": "Online marketing",
+        "subtitle": "Broaden your digital presence with airtight online marketing.",
+        "text": "For Design Studio, no idea is too wild to give your brand the digital identity that will sweep your target audience off their feet. Our strategy? Highlight your strenghts.",
+        "image": "marketing.webp"
+    }
+]

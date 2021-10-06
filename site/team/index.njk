@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Team
+  order: 4
+title: Meet our team
+---
+
+<section class="hero-team">
+    <h1 class="h-layout">{{ title }}</h1>
+
+    <img src="../static/images/banner-team.jpg" alt="hero banner">
+</section>
+
+<section class="h-layout">
+    <div class="team">
+        {% for member in team %}
+            <div class="team__member">
+                <img src="../static/images/team/{{ member.avatar }}" alt="{{ member.name }}">
+                <span class="team__member__name">{{ member.name }}</span>
+                <span class="team__member__title">{{ member.title }}</span>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% include "components/join_us.njk" %}

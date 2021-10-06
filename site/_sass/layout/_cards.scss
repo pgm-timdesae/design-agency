@@ -1,0 +1,48 @@
+.cards {
+    .card {
+        width: 100%;
+        margin-top: $margin-base;
+        margin-bottom: $margin-bigger;
+        transition: all 0.3s ease;
+
+        img {
+            margin-bottom: $margin-base;
+        }
+
+        &__text {
+            padding: $padding-base;
+        }
+    }
+
+    .card:hover {
+
+        text-decoration: none;
+        background: $bg-grey;
+
+        h3 {
+            color: $primary-color;
+        }
+
+        p {
+            color: $black;
+        }
+    }
+}
+
+@media (min-width: 48rem) {
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        > li {
+            width: 45%;
+            margin-top: $margin-base;
+            margin-bottom: $margin-base;
+    
+            img{
+                margin-bottom: $margin-base;
+            }
+        }
+    }        
+}

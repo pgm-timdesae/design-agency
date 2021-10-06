@@ -1,0 +1,103 @@
+.menu {
+    &__info {
+        display: flex;
+        align-items: center;
+        height: 10vh;
+
+        .logo {
+            > a { 
+                color: $white;
+            
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .nav {
+        --nav-spacing: #{$spacing*1px};
+
+        &__list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: none;
+
+            &-item {
+                font-family: $font-family-poppins;
+                font-weight: 500;
+
+                > a {
+                    margin-top: $margin-base;
+                    padding-bottom: $padding-base;
+                    border-bottom: 1px solid #333;
+                    position: relative;
+                    display: block;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 48rem) {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav {
+            &__list {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: flex-end;
+                align-items: center;
+
+                list-style: none;
+
+                &-item {
+                    > a {
+                    margin-left: 2rem;
+                    margin-top: 0;
+                    position: relative;
+                    display: block;
+                    color: $white;
+                    border-bottom: 2px solid transparent;
+                    padding: calc(var(--nav-spacing)/2) var(--nav-spacing);
+
+                    text-decoration: none;  
+                    transition: all 0.2s ease;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            z-index: -1;
+                            bottom: 0.5em;
+                            left: var(--nav-spacing);
+                            height: 0.5em;
+                            width: calc(100% - var(--nav-spacing) * 2);
+                            background: transparent;
+                            border-bottom: 1px solid transparent;
+
+                            transition: all 286ms ease-in-out 0s;
+                        }
+
+                        &:hover {
+                            border-bottom: 2px solid #f4f4f4;
+                        }
+                    }
+
+                    &--active {
+                        > a {
+                            &::before {
+                                background: lighten($black, 20%);
+                                border-bottom-color: $gray-900;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

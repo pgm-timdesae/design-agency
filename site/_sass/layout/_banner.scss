@@ -1,0 +1,44 @@
+.banner-join {
+    background: $bg-grey;
+    padding-top: $padding-big;
+    padding-bottom: $padding-big;
+
+    h2 {
+        border-left: 5px solid $black;
+    }
+
+    .h-layout {
+        margin-top: 0;
+    }
+
+    .banner__name {
+        h2 {
+            color: $black;
+        }    
+    }
+}
+
+@media (min-width: 48rem) {
+    .banner-join-flex{
+        display: flex;
+
+        .banner__name {
+            flex-basis: 25%;   
+        }
+    
+        .banner__description{
+            flex-basis: 50%;  
+            padding-left: $padding-base;
+            
+            p {
+                font-size: $font-size-big;
+            }
+
+            i {
+                margin-left: $margin-small;
+            }
+        }
+    }
+}
+
+

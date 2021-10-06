@@ -1,0 +1,65 @@
+.hero-team {
+    margin-top: 0;
+
+    img {
+        opacity: 0.8;
+        height: 60vh;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: $margin-big;
+    }
+
+    h1 {
+        margin-bottom: $margin-base;
+    }
+}
+
+.team {
+    &__member {
+        margin-bottom: $margin-big;
+
+        img {
+        margin-bottom: $margin-base;
+        }
+
+        &__name {
+            display: block;
+            color: $primary-color;
+            font-weight: 600;
+            font-size: $font-size-big;
+        }
+    }
+}
+
+@media (min-width: 48rem) {
+    .hero-team {
+        &__text {
+            top: 8rem;
+            left: 11rem;
+        }
+
+        h1 {
+            font-size: $font-size-huge;
+        }
+    }
+    }
+
+@media (min-width: 32rem) {
+    .team {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &__member {
+            width: 47%;
+        }
+    }     
+}
+
+@media (min-width: 48rem) {
+    .team {
+        &__member {
+            width: 30%;
+        }
+    }     
+}

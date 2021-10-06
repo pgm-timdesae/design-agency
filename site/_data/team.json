@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Anja Verschaeve",
+        "avatar": "anja.jpg",
+        "title": "Online Marketeer"
+    },
+    {
+        "name": "Annelies Van Extergem",
+        "avatar": "annelies.jpg",
+        "title": "Team Executive"
+    },
+    {
+        "name": "Anton Bardyn",
+        "avatar": "anton_b.jpg",
+        "title": "UX Architect"
+    },
+    {
+        "name": "Anton Vander Haeghen",
+        "avatar": "anton_vh.jpg",
+        "title": "Creative Copywriter"
+    },
+    {
+        "name": "Appoline Bufkens",
+        "avatar": "appoline.jpg",
+        "title": "Business Developer"
+    },
+    {
+        "name": "Bart De Waele",
+        "avatar": "bart.jpg",
+        "title": "CEO & Founder"
+    }
+]

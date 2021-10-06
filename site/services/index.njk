@@ -1,0 +1,14 @@
+---
+layout: layouts/default.njk
+title: Services
+class: services
+eleventyNavigation:
+  key: Services
+  order: 2
+---
+
+<ul class="services__list">
+  {% for service in services %}
+    {% include "components/services.njk" %}
+  {% endfor %}
+</ul>

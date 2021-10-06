@@ -1,0 +1,46 @@
+<footer class="footer">
+    <div class="footer__container h-layout">
+        {# <div class="container">
+            <div class="row justify-content-between">
+                <section>
+                    {% include "components/navigation-footer.njk" %}
+                </section>
+            </div>
+        </div> #}
+        <section class="footer__info">
+            <span>© {{ helpers.currentYear() }} Design Studio</span>
+
+            <span>Site by Tim D.S. and Nicolas C.</span>
+        </section>
+        <section class="legals">
+            <a href="#">Cookie Policy</a>
+            
+            <a href="#">Privacy Policy</a>
+        </section>
+
+        <section class="socials">
+            <ul class="socials__list">
+                <li class="socials__list-item">
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="socials__list-item">
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>                </li>
+                <li class="socials__list-item">
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>                
+                </li>
+            </ul>
+        </section>
+    </div>
+    
+    <section class="to-top">
+            <button class="btn-to-top">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+    </section>
+</footer>

@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+title: Home
+description: Get great at designing amazing websites and mobile applications with high-performance code and neat graphics. In the Associate Degree in Computer Programming you will learn all the tricks of the digital trade.
+---
+
+<section class="hero-home">
+    <img src="./static/images/banner-home.jpg" alt="hero banner">
+    
+    <h1>
+        <span class="hi">Hi.</span>
+        We are Design Studio.
+    </h1>
+    
+    <a href="services" class="primary-button">
+        <span>What we offer</span>
+
+        <i class="fas fa-arrow-right"></i>
+    </a>
+</section>
+
+<section class="work h-layout">
+    <h2>Our work</h2>
+    
+    <ul class="cards">
+        {% for work in collections.works | highlighted %}
+            {% include "components/work.njk" %}
+        {% endfor %}
+    </ul>
+</section>
+
+<section class="clients h-layout">
+    <h2>Clients</h2>
+    
+    <ul class="clients__list">
+        {% for client in clients %}
+            {% include "components/clients.njk" %}
+        {% endfor %}
+    </ul>
+</section> 
+
+{% include "components/join_us.njk" %}

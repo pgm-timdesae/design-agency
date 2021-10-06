@@ -1,0 +1,15 @@
+h1 {
+    font-size: $font-size-huge;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: $font-size-biggest;
+    border-left: 5px solid $primary-color;
+    padding-left: $padding-base;
+    margin-bottom: $margin-base;
+}
+
+h3 {
+    font-size: $font-size-bigger;
+}
